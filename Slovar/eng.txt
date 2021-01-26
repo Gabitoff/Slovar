@@ -58,9 +58,4 @@ fuchsia
 khaki
 black
 amber
-one
 five
-forty
-ten
-eleven
-two

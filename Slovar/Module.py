@@ -73,11 +73,16 @@ def paranda(rus,rmas,rv,ro,eng,emas,ev,eo,ok):
     fail=open(eng, "wt", encoding="utf-8-sig")
     fail.write(data)
     fail.close()
+    #rmas=[]это можно довести до ума и укоротить функцию
+    #rmas=loe_fail(rus)
+    #emas=[]
+    #emas=loe_fail(eng)
     rmas.remove(rusnepr)
     emas.remove(engnepr)
     rmas.append(ruspr)
     emas.append(engpr)
     ok.configure(text="Исправления внесены")
+    return emas,rmas
 
 def audio(sonavar,s1,s2,anslbl):
     text=sonavar.get()
